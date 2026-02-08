@@ -10,39 +10,49 @@ body {
   color:white;
   font-family:Arial, sans-serif;
   padding:20px;
+  margin:0;
 }
 
-h2 {
+h1 {
   text-align:center;
   margin-bottom:30px;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap:20px;
+}
+
 .card {
-  width:250px;
-  display:inline-block;
-  margin:15px;
   background:#14141d;
   border-radius:12px;
+  overflow:hidden;
   border:1px solid #1f1f2b;
-  text-align:center;
-  vertical-align:top;
-  padding-bottom:15px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
 }
 
 .card img {
   width:100%;
   height:140px;
   object-fit:cover;
-  border-radius:12px 12px 0 0;
 }
 
-.card p {
+.card-content {
+  padding:10px;
+  text-align:center;
+}
+
+.card-content p {
   margin:10px 0;
   font-weight:bold;
+  font-size:16px;
 }
 
-.card button {
-  padding:10px 20px;
+.card-content button {
+  padding:8px 16px;
   border:none;
   border-radius:8px;
   background:#1f8fff;
@@ -52,116 +62,128 @@ h2 {
   transition:0.2s;
 }
 
-.card button:hover {
+.card-content button:hover {
   background:#0f6ad1;
 }
 </style>
 </head>
 <body>
 
-<h2>agamesunblocked</h2>
+<h1>agamesunblocked</h1>
 
-<!-- ALL GAMES AS SEPARATE CARDS -->
+<div class="grid">
 
+<!-- ALL GAMES CARDS -->
 <div class="card">
   <img src="https://via.placeholder.com/300x200">
-  <p>Ragdoll Archers</p>
-  <button onclick="openAboutBlank('https://bitlifeonline.github.io/ragdoll-archers/')">Play</button>
+  <div class="card-content">
+    <p>Ragdoll Archers</p>
+    <button onclick="openAboutBlank('https://bitlifeonline.github.io/ragdoll-archers/')">Play</button>
+  </div>
 </div>
 
 <div class="card">
   <img src="https://via.placeholder.com/300x200">
-  <p>Atari Embed 1</p>
-  <button onclick="openAboutBlank('https://1601976398-atari-embeds.googleusercontent.com/embeds/16cb204cf3a9d4d223a0a3fd8b0eec5d/inner-frame-minified.html')">Play</button>
+  <div class="card-content">
+    <p>Atari Embed 1</p>
+    <button onclick="openAboutBlank('https://1601976398-atari-embeds.googleusercontent.com/embeds/16cb204cf3a9d4d223a0a3fd8b0eec5d/inner-frame-minified.html')">Play</button>
+  </div>
 </div>
 
 <div class="card">
   <img src="https://via.placeholder.com/300x200">
-  <p>Atari Embed 2</p>
-  <button onclick="openAboutBlank('https://457096026-atari-embeds.googleusercontent.com/embeds/16cb204cf3a9d4d223a0a3fd8b0eec5d/inner-frame-minified.html')">Play</button>
+  <div class="card-content">
+    <p>Atari Embed 2</p>
+    <button onclick="openAboutBlank('https://457096026-atari-embeds.googleusercontent.com/embeds/16cb204cf3a9d4d223a0a3fd8b0eec5d/inner-frame-minified.html')">Play</button>
+  </div>
 </div>
 
 <div class="card">
   <img src="https://via.placeholder.com/300x200">
-  <p>Atari Embed 3</p>
-  <button onclick="openAboutBlank('https://1717876226-atari-embeds.googleusercontent.com/embeds/16cb204cf3a9d4d223a0a3fd8b0eec5d/inner-frame-minified.html')">Play</button>
+  <div class="card-content">
+    <p>Atari Embed 3</p>
+    <button onclick="openAboutBlank('https://1717876226-atari-embeds.googleusercontent.com/embeds/16cb204cf3a9d4d223a0a3fd8b0eec5d/inner-frame-minified.html')">Play</button>
+  </div>
 </div>
 
 <div class="card">
   <img src="https://via.placeholder.com/300x200">
-  <p>User Code App Panel</p>
-  <button onclick="openAboutBlank('https://n-m3lgwr2qxcxvoy572l2eckx3mo67ocfu3kitd2q-0lu-script.googleusercontent.com/userCodeAppPanel')">Play</button>
+  <div class="card-content">
+    <p>User Code App Panel</p>
+    <button onclick="openAboutBlank('https://n-m3lgwr2qxcxvoy572l2eckx3mo67ocfu3kitd2q-0lu-script.googleusercontent.com/userCodeAppPanel')">Play</button>
+  </div>
 </div>
 
 <div class="card">
   <img src="https://via.placeholder.com/300x200">
-  <p>Eaglercraft (Minecraft 1.8)</p>
-  <button onclick="openAboutBlank('https://eaglercraft-archive.github.io/Koneclient-1.8-web/')">Play</button>
+  <div class="card-content">
+    <p>Eaglercraft (Minecraft 1.8)</p>
+    <button onclick="openAboutBlank('https://eaglercraft-archive.github.io/Koneclient-1.8-web/')">Play</button>
+  </div>
 </div>
 
 <div class="card">
   <img src="https://via.placeholder.com/300x200">
-  <p>Eaglercraft (Minecraft 1.5.2-1.12.2)</p>
-  <button onclick="openAboutBlank('https://theminer.netlify.app/')">Play</button>
+  <div class="card-content">
+    <p>Eaglercraft (Minecraft 1.5.2-1.12.2)</p>
+    <button onclick="openAboutBlank('https://theminer.netlify.app/')">Play</button>
+  </div>
 </div>
 
 <div class="card">
   <img src="https://via.placeholder.com/300x200">
-  <p>d3 npc shooter</p>
-  <button onclick="openAboutBlank('https://npc3ddshot.lovable.app/')">Play</button>
+  <div class="card-content">
+    <p>d3 npc shooter</p>
+    <button onclick="openAboutBlank('https://npc3ddshot.lovable.app/')">Play</button>
+  </div>
 </div>
 
 <div class="card">
   <img src="https://via.placeholder.com/300x200">
-  <p>Banana Clicker</p>
-  <button onclick="openAboutBlank('https://lolgodi.github.io/banana-empier/')">Play</button>
+  <div class="card-content">
+    <p>Banana Clicker</p>
+    <button onclick="openAboutBlank('https://lolgodi.github.io/banana-empier/')">Play</button>
+  </div>
 </div>
 
 <div class="card">
   <img src="https://via.placeholder.com/300x200">
-  <p>Hollow Knight</p>
-  <button onclick="openAboutBlank('https://lolgodi.github.io/Hollow-Knight/')">Play</button>
+  <div class="card-content">
+    <p>Hollow Knight</p>
+    <button onclick="openAboutBlank('https://lolgodi.github.io/Hollow-Knight/')">Play</button>
+  </div>
 </div>
 
 <div class="card">
   <img src="https://via.placeholder.com/300x200">
-  <p>1v1.ai</p>
-  <button onclick="openAboutBlank('https://agames1v1.lovable.app/')">Play</button>
+  <div class="card-content">
+    <p>1v1.ai</p>
+    <button onclick="openAboutBlank('https://agames1v1.lovable.app/')">Play</button>
+  </div>
+</div>
+
 </div>
 
 <script>
 function openAboutBlank(url) {
   const win = window.open("about:blank", "_blank");
-
   win.document.write(`
     <!DOCTYPE html>
     <html>
     <head>
       <title>Game</title>
       <style>
-        html,body {
-          margin:0;
-          padding:0;
-          width:100%;
-          height:100%;
-          background:black;
-        }
-        iframe {
-          width:100%;
-          height:100%;
-          border:none;
-        }
+        html,body {margin:0; padding:0; width:100%; height:100%; background:black;}
+        iframe {width:100%; height:100%; border:none;}
       </style>
     </head>
     <body>
-      <iframe src="${url}" 
-        sandbox="allow-scripts allow-forms allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-downloads allow-storage-access-by-user-activation" 
-        allowfullscreen>
-      </iframe>
+      <iframe src="${url}"
+        sandbox="allow-scripts allow-forms allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-downloads allow-storage-access-by-user-activation"
+        allowfullscreen></iframe>
     </body>
     </html>
   `);
-
   win.document.close();
 }
 </script>
