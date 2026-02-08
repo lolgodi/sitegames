@@ -9,8 +9,8 @@ body {
   background:#0b0b10;
   color:white;
   font-family:Arial, sans-serif;
-  padding:20px;
   margin:0;
+  padding:20px;
 }
 
 h1 {
@@ -32,6 +32,11 @@ h1 {
   display:flex;
   flex-direction:column;
   justify-content:space-between;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 .card img {
@@ -73,9 +78,10 @@ h1 {
 
 <div class="grid">
 
-<!-- ALL GAMES CARDS -->
+<!-- EXISTING GAMES -->
+
 <div class="card">
-  <img src="https://via.placeholder.com/300x200">
+  <img src="https://i.imgur.com/4Z8iHnA.png" alt="Ragdoll Archers">
   <div class="card-content">
     <p>Ragdoll Archers</p>
     <button onclick="openAboutBlank('https://bitlifeonline.github.io/ragdoll-archers/')">Play</button>
@@ -83,39 +89,7 @@ h1 {
 </div>
 
 <div class="card">
-  <img src="https://via.placeholder.com/300x200">
-  <div class="card-content">
-    <p>Atari Embed 1</p>
-    <button onclick="openAboutBlank('https://1601976398-atari-embeds.googleusercontent.com/embeds/16cb204cf3a9d4d223a0a3fd8b0eec5d/inner-frame-minified.html')">Play</button>
-  </div>
-</div>
-
-<div class="card">
-  <img src="https://via.placeholder.com/300x200">
-  <div class="card-content">
-    <p>Atari Embed 2</p>
-    <button onclick="openAboutBlank('https://457096026-atari-embeds.googleusercontent.com/embeds/16cb204cf3a9d4d223a0a3fd8b0eec5d/inner-frame-minified.html')">Play</button>
-  </div>
-</div>
-
-<div class="card">
-  <img src="https://via.placeholder.com/300x200">
-  <div class="card-content">
-    <p>Atari Embed 3</p>
-    <button onclick="openAboutBlank('https://1717876226-atari-embeds.googleusercontent.com/embeds/16cb204cf3a9d4d223a0a3fd8b0eec5d/inner-frame-minified.html')">Play</button>
-  </div>
-</div>
-
-<div class="card">
-  <img src="https://via.placeholder.com/300x200">
-  <div class="card-content">
-    <p>User Code App Panel</p>
-    <button onclick="openAboutBlank('https://n-m3lgwr2qxcxvoy572l2eckx3mo67ocfu3kitd2q-0lu-script.googleusercontent.com/userCodeAppPanel')">Play</button>
-  </div>
-</div>
-
-<div class="card">
-  <img src="https://via.placeholder.com/300x200">
+  <img src="https://i.imgur.com/Yt1t9l2.png" alt="Eaglercraft 1.8">
   <div class="card-content">
     <p>Eaglercraft (Minecraft 1.8)</p>
     <button onclick="openAboutBlank('https://eaglercraft-archive.github.io/Koneclient-1.8-web/')">Play</button>
@@ -123,7 +97,7 @@ h1 {
 </div>
 
 <div class="card">
-  <img src="https://via.placeholder.com/300x200">
+  <img src="https://i.imgur.com/vsJXx1b.png" alt="Eaglercraft 1.5-1.12">
   <div class="card-content">
     <p>Eaglercraft (Minecraft 1.5.2-1.12.2)</p>
     <button onclick="openAboutBlank('https://theminer.netlify.app/')">Play</button>
@@ -131,7 +105,7 @@ h1 {
 </div>
 
 <div class="card">
-  <img src="https://via.placeholder.com/300x200">
+  <img src="https://i.imgur.com/O1H5RJ7.png" alt="D3 NPC Shooter">
   <div class="card-content">
     <p>d3 npc shooter</p>
     <button onclick="openAboutBlank('https://npc3ddshot.lovable.app/')">Play</button>
@@ -139,7 +113,7 @@ h1 {
 </div>
 
 <div class="card">
-  <img src="https://via.placeholder.com/300x200">
+  <img src="https://i.imgur.com/fGZfhb9.png" alt="Banana Clicker">
   <div class="card-content">
     <p>Banana Clicker</p>
     <button onclick="openAboutBlank('https://lolgodi.github.io/banana-empier/')">Play</button>
@@ -147,7 +121,7 @@ h1 {
 </div>
 
 <div class="card">
-  <img src="https://via.placeholder.com/300x200">
+  <img src="https://i.imgur.com/7I9WZfO.png" alt="Hollow Knight">
   <div class="card-content">
     <p>Hollow Knight</p>
     <button onclick="openAboutBlank('https://lolgodi.github.io/Hollow-Knight/')">Play</button>
@@ -155,10 +129,36 @@ h1 {
 </div>
 
 <div class="card">
-  <img src="https://via.placeholder.com/300x200">
+  <img src="https://i.imgur.com/6y1oQ5d.png" alt="1v1.ai">
   <div class="card-content">
     <p>1v1.ai</p>
     <button onclick="openAboutBlank('https://agames1v1.lovable.app/')">Play</button>
+  </div>
+</div>
+
+<!-- NEW GAMES YOU SENT -->
+
+<div class="card">
+  <img src="https://i.imgur.com/8oVJm7k.png" alt="Atari Game 1">
+  <div class="card-content">
+    <p>game2</p>
+    <button onclick="openAboutBlank('https://2132119545-atari-embeds.googleusercontent.com/embeds/16cb204cf3a9d4d223a0a3fd8b0eec5d/inner-frame-minified.html')">Play</button>
+  </div>
+</div>
+
+<div class="card">
+  <img src="https://i.imgur.com/9Wc6rMa.png" alt="Atari Game 2">
+  <div class="card-content">
+    <p>game1</p>
+    <button onclick="openAboutBlank('https://441405306-atari-embeds.googleusercontent.com/embeds/16cb204cf3a9d4d223a0a3fd8b0eec5d/inner-frame-minified.html')">Play</button>
+  </div>
+</div>
+
+<div class="card">
+  <img src="https://i.imgur.com/7J6Qf2N.png" alt="Atari Game 3">
+  <div class="card-content">
+    <p>game3</p>
+    <button onclick="openAboutBlank('https://1712051769-atari-embeds.googleusercontent.com/embeds/16cb204cf3a9d4d223a0a3fd8b0eec5d/inner-frame-minified.html')">Play</button>
   </div>
 </div>
 
