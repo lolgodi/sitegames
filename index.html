@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>agamesunblocked</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, Arial, sans-serif;
+}
+
+body {
+  background: #0b0b10;
+  color: white;
+}
+
+/* TOP BAR */
+.topbar {
+  background: #0f0f17;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #1f1f2b;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #4cff4c;
+}
+
+/* MENU */
+.menu a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #ccc;
+  font-size: 14px;
+}
+
+.menu a:hover {
+  color: white;
+}
+
+/* SEARCH BAR */
+.search {
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.search input {
+  width: 600px;
+  max-width: 90%;
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: none;
+  background: #14141d;
+  color: white;
+  outline: none;
+  font-size: 16px;
+}
+
+/* GAME GRID */
+.games {
+  padding: 20px 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 18px;
+}
+
+/* GAME CARD */
+.card {
+  background: #14141d;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.2s;
+  border: 1px solid #1f1f2b;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #4cff4c55;
+}
+
+.card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.card p {
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+  color: #ddd;
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="logo">agamesunblocked</div>
+  <div class="menu">
+    <a href="#">Games</a>
+    <a href="#">New</a>
+    <a href="#">Popular</a>
+    <a href="#">Settings</a>
+  </div>
+</div>
+
+<!-- SEARCH -->
+<div class="search">
+  <input type="text" placeholder="Search games...">
+</div>
+
+<!-- GAMES -->
+<div class="games">
+
+  <div class="card">
+    <img src="https://via.placeholder.com/300x200">
+    <p>Minecraft</p>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/300x200">
+    <p>Slope</p>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/300x200">
+    <p>1v1.lol</p>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/300x200">
+    <p>Shell Shockers</p>
+  </div>
+
+</div>
+
+</body>
+</html>
