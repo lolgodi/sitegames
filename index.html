@@ -1,37 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
 <title>agamesunblocked</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
 body {
-  background:#0b0b10;
-  color:white;
-  font-family:Arial, sans-serif;
-  margin:0;
-  padding:20px;
+  margin: 0;
+  background: #0f0f0f;
+  font-family: Arial, sans-serif;
+  color: white;
 }
 
-h1 {
-  text-align:center;
-  margin-bottom:30px;
+.header {
+  padding: 15px;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap:20px;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
+  padding: 15px;
 }
 
 .card {
-  background:#14141d;
-  border-radius:12px;
-  overflow:hidden;
-  border:1px solid #1f1f2b;
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
+  background: #1c1c1c;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
   transition: transform 0.2s;
 }
 
@@ -40,153 +38,85 @@ h1 {
 }
 
 .card img {
-  width:100%;
-  height:140px;
-  object-fit:cover;
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
 }
 
-.card-content {
-  padding:10px;
-  text-align:center;
+.card p {
+  margin: 10px;
+  font-size: 14px;
+  text-align: center;
 }
 
-.card-content p {
-  margin:10px 0;
-  font-weight:bold;
-  font-size:16px;
-}
-
-.card-content button {
-  padding:8px 16px;
-  border:none;
-  border-radius:8px;
-  background:#1f8fff;
-  color:white;
-  cursor:pointer;
-  font-weight:bold;
-  transition:0.2s;
-}
-
-.card-content button:hover {
-  background:#0f6ad1;
+/* about:blank launcher */
+iframe {
+  display: none;
 }
 </style>
-</head>
-<body>
-
-<h1>agamesunblocked</h1>
-
-<div class="grid">
-
-<!-- EXISTING GAMES -->
-
-<div class="card">
-  <img src="https://i.imgur.com/4Z8iHnA.png" alt="Ragdoll Archers">
-  <div class="card-content">
-    <p>Ragdoll Archers</p>
-    <button onclick="openAboutBlank('https://bitlifeonline.github.io/ragdoll-archers/')">Play</button>
-  </div>
-</div>
-
-<div class="card">
-  <img src="https://i.imgur.com/Yt1t9l2.png" alt="Eaglercraft 1.8">
-  <div class="card-content">
-    <p>Eaglercraft (Minecraft 1.8)</p>
-    <button onclick="openAboutBlank('https://eaglercraft-archive.github.io/Koneclient-1.8-web/')">Play</button>
-  </div>
-</div>
-
-<div class="card">
-  <img src="https://i.imgur.com/vsJXx1b.png" alt="Eaglercraft 1.5-1.12">
-  <div class="card-content">
-    <p>Eaglercraft (Minecraft 1.5.2-1.12.2)</p>
-    <button onclick="openAboutBlank('https://theminer.netlify.app/')">Play</button>
-  </div>
-</div>
-
-<div class="card">
-  <img src="https://i.imgur.com/O1H5RJ7.png" alt="D3 NPC Shooter">
-  <div class="card-content">
-    <p>d3 npc shooter</p>
-    <button onclick="openAboutBlank('https://npc3ddshot.lovable.app/')">Play</button>
-  </div>
-</div>
-
-<div class="card">
-  <img src="https://i.imgur.com/fGZfhb9.png" alt="Banana Clicker">
-  <div class="card-content">
-    <p>Banana Clicker</p>
-    <button onclick="openAboutBlank('https://lolgodi.github.io/banana-empier/')">Play</button>
-  </div>
-</div>
-
-<div class="card">
-  <img src="https://i.imgur.com/7I9WZfO.png" alt="Hollow Knight">
-  <div class="card-content">
-    <p>Hollow Knight</p>
-    <button onclick="openAboutBlank('https://lolgodi.github.io/Hollow-Knight/')">Play</button>
-  </div>
-</div>
-
-<div class="card">
-  <img src="https://i.imgur.com/6y1oQ5d.png" alt="1v1.ai">
-  <div class="card-content">
-    <p>1v1.ai</p>
-    <button onclick="openAboutBlank('https://agames1v1.lovable.app/')">Play</button>
-  </div>
-</div>
-
-<!-- NEW GAMES YOU SENT -->
-
-<div class="card">
-  <img src="https://i.imgur.com/8oVJm7k.png" alt="Atari Game 1">
-  <div class="card-content">
-    <p>game2</p>
-    <button onclick="openAboutBlank('https://2132119545-atari-embeds.googleusercontent.com/embeds/16cb204cf3a9d4d223a0a3fd8b0eec5d/inner-frame-minified.html')">Play</button>
-  </div>
-</div>
-
-<div class="card">
-  <img src="https://i.imgur.com/9Wc6rMa.png" alt="Atari Game 2">
-  <div class="card-content">
-    <p>game1</p>
-    <button onclick="openAboutBlank('https://441405306-atari-embeds.googleusercontent.com/embeds/16cb204cf3a9d4d223a0a3fd8b0eec5d/inner-frame-minified.html')">Play</button>
-  </div>
-</div>
-
-<div class="card">
-  <img src="https://i.imgur.com/7J6Qf2N.png" alt="Atari Game 3">
-  <div class="card-content">
-    <p>game3</p>
-    <button onclick="openAboutBlank('https://1712051769-atari-embeds.googleusercontent.com/embeds/16cb204cf3a9d4d223a0a3fd8b0eec5d/inner-frame-minified.html')">Play</button>
-  </div>
-</div>
-
-</div>
 
 <script>
 function openAboutBlank(url) {
-  const win = window.open("about:blank", "_blank");
+  const win = window.open();
   win.document.write(`
-    <!DOCTYPE html>
-    <html>
-    <head>
-      <title>Game</title>
-      <style>
-        html,body {margin:0; padding:0; width:100%; height:100%; background:black;}
-        iframe {width:100%; height:100%; border:none;}
-      </style>
-    </head>
-    <body>
-      <iframe src="${url}"
-        sandbox="allow-scripts allow-forms allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-downloads allow-storage-access-by-user-activation"
-        allowfullscreen></iframe>
-    </body>
-    </html>
+    <iframe src="${url}"
+      style="border:none;width:100%;height:100%"
+      allowfullscreen>
+    </iframe>
   `);
-  win.document.close();
 }
 </script>
+</head>
+
+<body>
+
+<div class="header">agamesunblocked</div>
+
+<div class="grid">
+
+  <!-- Eaglercraft 1.8 -->
+  <div class="card" onclick="openAboutBlank('https://eaglercraft-archive.github.io/Koneclient-1.8-web/')">
+    <img src="https://i.imgur.com/4Z7JQZL.jpeg">
+    <p>Eaglercraft 1.8</p>
+  </div>
+
+  <!-- Eaglercraft Multi -->
+  <div class="card" onclick="openAboutBlank('https://theminer.netlify.app/')">
+    <img src="https://i.imgur.com/JR2qZcO.jpeg">
+    <p>Eaglercraft 1.5–1.12</p>
+  </div>
+
+  <!-- NPC Shooter -->
+  <div class="card" onclick="openAboutBlank('https://npc3ddshot.lovable.app/')">
+    <img src="https://i.imgur.com/9z2JH8R.jpeg">
+    <p>3D NPC Shooter</p>
+  </div>
+
+  <!-- Banana Clicker -->
+  <div class="card" onclick="openAboutBlank('https://lolgodi.github.io/banana-empier/')">
+    <img src="https://i.imgur.com/2N1kG9y.jpeg">
+    <p>Banana Clicker</p>
+  </div>
+
+  <!-- Hollow Knight -->
+  <div class="card" onclick="openAboutBlank('https://lolgodi.github.io/Hollow-Knight/')">
+    <img src="https://i.imgur.com/8c7R8sJ.jpeg">
+    <p>Hollow Knight</p>
+  </div>
+
+  <!-- 1v1 AI -->
+  <div class="card" onclick="openAboutBlank('https://agames1v1.lovable.app/')">
+    <img src="https://i.imgur.com/L0TQxRZ.jpeg">
+    <p>1v1 AI</p>
+  </div>
+
+  <!-- NEW GAME (your last embed converted correctly) -->
+  <div class="card" onclick="openAboutBlank('https://1712051769-atari-embeds.googleusercontent.com/embeds/16cb204cf3a9d4d223a0a3fd8b0eec5d/inner-frame-minified.html')">
+    <img src="https://i.imgur.com/QwK6YkT.jpeg">
+    <p>rocked goal</p>
+  </div>
+
+</div>
 
 </body>
 </html>
